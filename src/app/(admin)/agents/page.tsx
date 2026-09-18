@@ -1,12 +1,7 @@
-import { Users } from "lucide-react"
-import { ModulePlaceholder } from "@/components/admin/module-placeholder"
+import { AdminModuleClient } from "@/components/admin/admin-module-client"
 
-export default function AgentsPage() {
-  return (
-    <ModulePlaceholder
-      title="Agents"
-      description="Manage platform agents, status, wallets and permissions."
-      icon={Users}
-    />
-  )
+export const dynamic = "force-dynamic"
+
+export default function Page() {
+  return <AdminModuleClient kind="agents" />
 }

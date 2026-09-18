@@ -1,12 +1,7 @@
-import { Activity } from "lucide-react"
-import { ModulePlaceholder } from "@/components/admin/module-placeholder"
+import { AdminModuleClient } from "@/components/admin/admin-module-client"
 
-export default function SessionsPage() {
-  return (
-    <ModulePlaceholder
-      title="Game Sessions"
-      description="Monitor active and historical game sessions."
-      icon={Activity}
-    />
-  )
+export const dynamic = "force-dynamic"
+
+export default function Page() {
+  return <AdminModuleClient kind="sessions" />
 }

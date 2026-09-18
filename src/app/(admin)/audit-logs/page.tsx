@@ -1,12 +1,7 @@
-import { ScrollText } from "lucide-react"
-import { ModulePlaceholder } from "@/components/admin/module-placeholder"
+import { AdminModuleClient } from "@/components/admin/admin-module-client"
 
-export default function AuditLogsPage() {
-  return (
-    <ModulePlaceholder
-      title="Audit Logs"
-      description="Review administrative and security-sensitive activity."
-      icon={ScrollText}
-    />
-  )
+export const dynamic = "force-dynamic"
+
+export default function Page() {
+  return <AdminModuleClient kind="audit-logs" />
 }

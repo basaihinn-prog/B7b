@@ -1,12 +1,7 @@
-import { WalletCards } from "lucide-react"
-import { ModulePlaceholder } from "@/components/admin/module-placeholder"
+import { AdminModuleClient } from "@/components/admin/admin-module-client"
 
-export default function WalletsPage() {
-  return (
-    <ModulePlaceholder
-      title="Wallets"
-      description="Review balances, locked funds and wallet ownership."
-      icon={WalletCards}
-    />
-  )
+export const dynamic = "force-dynamic"
+
+export default function Page() {
+  return <AdminModuleClient kind="wallets" />
 }

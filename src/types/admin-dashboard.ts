@@ -7,6 +7,7 @@ export type DashboardUserStats = {
 export type DashboardWalletStats = {
   total_balance: string
   locked_balance: string
+  currency?: string
 }
 
 export type DashboardGamingStats = {

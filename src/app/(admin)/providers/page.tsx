@@ -1,12 +1,7 @@
-import { Boxes } from "lucide-react"
-import { ModulePlaceholder } from "@/components/admin/module-placeholder"
+import { AdminModuleClient } from "@/components/admin/admin-module-client"
 
-export default function ProvidersPage() {
-  return (
-    <ModulePlaceholder
-      title="Providers"
-      description="Manage game providers, endpoints and provider status."
-      icon={Boxes}
-    />
-  )
+export const dynamic = "force-dynamic"
+
+export default function Page() {
+  return <AdminModuleClient kind="providers" />
 }

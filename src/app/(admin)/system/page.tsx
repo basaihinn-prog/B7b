@@ -1,12 +1,7 @@
-import { ServerCog } from "lucide-react"
-import { ModulePlaceholder } from "@/components/admin/module-placeholder"
+import { AdminModuleClient } from "@/components/admin/admin-module-client"
 
-export default function SystemPage() {
-  return (
-    <ModulePlaceholder
-      title="System"
-      description="System health, backend status and operational configuration."
-      icon={ServerCog}
-    />
-  )
+export const dynamic = "force-dynamic"
+
+export default function Page() {
+  return <AdminModuleClient kind="system" />
 }

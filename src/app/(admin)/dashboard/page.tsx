@@ -164,7 +164,7 @@ export default async function DashboardPage() {
             variant="outline"
             className="w-fit"
           >
-            All-currency aggregate
+            {data.wallets.currency ?? "Default currency"} aggregate
           </Badge>
         </div>
 
@@ -178,9 +178,8 @@ export default async function DashboardPage() {
         </div>
 
         <p className="text-xs text-muted-foreground">
-          Financial totals currently aggregate all wallet currencies.
-          Currency-by-currency accounting will replace this combined
-          view before multi-currency operations are enabled.
+          Financial totals shown above are scoped to the backend default currency.
+          Transaction rows retain their own currency codes.
         </p>
       </section>
 
