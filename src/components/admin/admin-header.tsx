@@ -14,6 +14,7 @@ const titles: Record<string, string> = {
   "/transactions": "Transactions",
   "/providers": "Providers",
   "/games": "Games",
+  "/game-launcher": "Game Launcher",
   "/sessions": "Game Sessions",
   "/audit-logs": "Audit Logs",
   "/system": "System",
