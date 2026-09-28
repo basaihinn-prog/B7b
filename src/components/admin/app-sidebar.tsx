@@ -90,6 +90,11 @@ const groups = [
         icon: Gamepad2,
       },
       {
+        title: "Game Launcher",
+        href: "/game-launcher",
+        icon: Gamepad2,
+      },
+      {
         title: "Sessions",
         href: "/sessions",
         icon: Activity,
